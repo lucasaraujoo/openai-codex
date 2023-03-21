@@ -10,6 +10,7 @@ The project is powered by JavaScript and Node.js. It also uses the OpenAI API, E
 
 It will also provide an easy way for people to explore and interact with GPT-3.
 
+
 ### Installing
 
 ```
@@ -18,7 +19,9 @@ npm install
 
 ### Running
 
+
 First of all you should be create .env files with these variables.
+
 
 .ENV in server folder content: ``OPENAI_API_KEY=your open ai api key``
 
@@ -26,11 +29,14 @@ First of all you should be create .env files with these variables.
 
 
 Running Server First
+
 ```
 npm run server
 ```
 
+
 Running Client 
+
 ```
 npm run dev
 ```
