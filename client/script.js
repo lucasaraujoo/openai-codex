@@ -3,10 +3,13 @@ import './style.css';
 import bot from './assets/bot.svg';
 import user from './assets/user.svg';
 
+
 const form = document.querySelector('form');
 const chatContainer = document.querySelector('#chat_container');
 
 let loadInterval;
+
+
 
 function loader(element){
   element.textContent = '';
@@ -91,9 +94,9 @@ const handleSubmit = async (e) =>{
   const messageDiv = document.getElementById(uniqueId);
 
   loader(messageDiv);
-
-  //fetch data from the server and bot response
-  const response = await fetch('http://localhost:5000',{
+  
+  //fetch data from the server and bot response. In localhost place: http://localhost:5000 (server listening url)
+  const response = await fetch(import.meta.env.VITE_SERVER_URL,{
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
